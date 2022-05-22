@@ -44,6 +44,7 @@ ol, ul {
 
 body{
     font-family: 'YUniverse-B';
+    overflow: hidden;
 }
 
 .popup-wrap{
@@ -122,29 +123,37 @@ body{
     bottom:0; 
     margin: 35px;               
     padding:15px;
-    background: white;
+    background: #FAFAF9;
     box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
     border-radius: 25px;
 }
 
+i{
+    color: #E1DBF0;
+    font-size: 2rem;
+}
+
 .content{
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.left-area{
-    width: 30%;
+.greeting-area, .clock-area{ 
+    flex: 1;
 }
 
-.left-area>div{ 
-    height: 50%;
+#quote{
+    flex: 0.5;
 }
 
 .greeting-area{
     margin: auto 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
 }
 
 #greeting{
@@ -156,25 +165,43 @@ body{
     align-items: flex-start;
 }
 
+#date{
+    font-size: 2rem;
+}
+
 #clock{
     font-size: 7rem;
 }
 
-.main-area{
-    width: 40%;
+.todo-area{
+    flex: 9;
 }
 
-.right-area{
-    width: 30%;
+.todo-input{
+    width: 80%;
+    margin: 15px 0;
+    border: none;
+	border-bottom:1px solid #999;
+    font-size: 18px; 
+	color: black;
+    outline: none;
 }
 
+.todo-area button{
+    border: none;
+    background: none;
+    margin-left: 5px;
+}
+
+#weater{
+    flex: 1;
+}
 
 #bgImg {
     position: absolute;
     z-index: -1;
-    width: 100vw;
-    height: 100vh;
     object-fit: cover;
+    overflow: hidden;
     top: 0;
     bottom: 0;
     left: 0;
