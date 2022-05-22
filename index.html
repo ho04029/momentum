@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"type="text/css">
+    <title>Momentum</title>
+</head>
+<body>
+<div class="container">
+  <div class="popup-wrap" id="popup"> <!--모달을 감쌀 박스-->
+    <div class="popup"> <!--실질적 모달 팝업-->
+      <div class="popup-head">	<!--로고 영역-->
+        <span class="head-title">Login</span>
+      </div>
+      <div class="popup-body"><!--팝업내용-->
+        <form class="hidden" id="login-form" >
+          <input type="text" required max lenght="8"
+          placeholder="What is your name?"/>
+          <input type="submit" value="Log In">
+        </form>
+      </div>
+    </div>
+  </div><!--popup-->
+
+  <div id="mainContainer">
+    <div class="content left-area">
+      <div class="greeting-area">
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+      <div class="clock-area">
+        <h2 id="date"></h2>
+        <h2 id="clock">00:00:00</h2>
+      </div>
+    </div>
+
+    <div class="content main-area">
+      <form id="todo-form">
+          <input type="text" placeholder="Write a To Do and Press Enter" required/>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <div class="content rigth-area">
+      <div id="img-area"></div>
+      <div id="weather">
+          <span></span>
+          <span></span>
+      </div>
+    </div>
+
+    
+    <!-- <div id="quote">
+        <span></span>
+        <span></span>
+    </div> -->
+    
+  </div><!--mainContainer-->
+</div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <!-- <script src="js/quotes.js"></script> -->
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

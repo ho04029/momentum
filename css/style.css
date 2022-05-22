@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+@font-face {
+    font-family: 'YUniverse-B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'YUniverse-B';
+}
+
+.popup-wrap{
+    background-color:rgba(0,0,0,.3); 
+    display:flex; 
+    justify-content:center; 
+    align-items:center;     
+    position:fixed;         
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;                
+    padding:15px; 
+}
+
+.popup{
+    width:100%;               
+    max-width:400px;          
+    border-radius:10px;       
+    overflow:hidden;          
+    background-color:#264db5; 
+    box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+}
+
+.popup-head{
+    height:50px; 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.popup-body{  
+    background-color:#ffffff;
+    height: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+#mainContainer{
+    display: flex;
+    justify-content:space-between;    
+    position:fixed;         
+    top:0;
+    left:0;
+    right:0;
+    bottom:0; 
+    margin: 35px;               
+    padding:15px;
+    background: white;
+    box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+    border-radius: 25px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-area{
+    width: 30%;
+}
+
+.left-area>div{ 
+    height: 50%;
+}
+
+.greeting-area{
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+
+#greeting{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.clock-area{
+    align-items: flex-start;
+}
+
+#clock{
+    font-size: 7rem;
+}
+
+.main-area{
+    width: 40%;
+}
+
+.right-area{
+    width: 30%;
+}
+
+
+/* #bgImg {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}  */
+
+
+
+
