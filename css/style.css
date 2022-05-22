@@ -66,8 +66,10 @@ body{
     max-width:400px;          
     border-radius:10px;       
     overflow:hidden;          
-    background-color:#264db5; 
+    background-color:#E1DBF0; 
     box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+    font-family: 'YUniverse-B';
+    font-size: 2rem;
 }
 
 .popup-head{
@@ -80,6 +82,30 @@ body{
 .popup-body{  
     background-color:#ffffff;
     height: 100px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.popup-body>form{
+    text-align: center;
+}
+
+.login-input{
+    width: 160px;
+    border: none;
+	border-bottom:1px solid #999;
+    font-size: 18px; 
+	color: black;
+    outline: none;
+}
+
+.login-btn{
+    border: none;
+    background-color: #E1DBF0;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .hidden{
