@@ -16,3 +16,8 @@
 1. html
 2. css
 3. JavaScript
+
+## 화면구현
+
+<img src="https://user-images.githubusercontent.com/96459913/218915780-f1cee9d5-8dbc-4a60-99e6-86552b78e31d.png" width=90%/>
+<img src="https://user-images.githubusercontent.com/96459913/218915790-4579ce19-8b5a-483c-b3fb-47b1bf8f34ff.png" width=90%/>
